@@ -1,0 +1,19 @@
+https://www.prisma.io/docs/orm/prisma-client/client-extensions/query
+
+Extending Write-operations:-> callbacks
+create()
+update()
+upsert()
+delete()
+createMany()
+createManyAndReturn()
+updateMany()
+deleteMany()
+
+
+Extending Read operations: -> default scoping
+All: FindUnique(), findUniqueOrThrow(), findFirst(), findFirstOrThrow(), findMany()
+Do findMany(), can override with findRaw()
+
+
+
