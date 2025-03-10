@@ -21,7 +21,8 @@ let ReceiverInputs = {
         pass: process.env("EMAIL_PW")
     }
 };
-RecieverInput.port ??= 993;
+
+ReceiverInputs.port ??= 993;
 
 export const sender = nodemailer.createTransport(NodeMailerTransporterInput);
 export const reciever = new ImapFlow(ReceiverInputs);

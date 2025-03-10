@@ -1,5 +1,6 @@
 export const client = require('mongoose');
 
+// Set up connection for Document DB
 let username = process.env("MONGO_USERNAME");
 let password = process.env("MONGO_PW");
 let url = process.env("MONGO_URL") ??= "127.0.0.1";
