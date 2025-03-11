@@ -10,6 +10,6 @@ if(typeof(username) != 'undefined' && typeof(password) != 'undefined'){
     user_info = `${username}:${password}@`
 }
 
-createClient({
+export const RedisClient = createClient({
     url: `redis://${user_info}${url}:${port}`
 });

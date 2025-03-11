@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client'
 //import { model } from 'mongoose';
 
-class PrismaBaseClass{
+export class PrismaBaseClass{
     static subclasses = {};
     static registerSubclass(name, subclass) {
         PrismaBaseClass.subclasses[name] = subclass;

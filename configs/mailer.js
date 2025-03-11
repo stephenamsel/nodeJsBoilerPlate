@@ -26,6 +26,6 @@ let ReceiverInputs = {
 
 ReceiverInputs.port ??= 993;
 
-export const sender = nodemailer.createTransport(NodeMailerTransporterInput);
-export const reciever = new ImapFlow(ReceiverInputs);
+export const Mailsender = nodemailer.createTransport(NodeMailerTransporterInput);
+export const Mailreciever = new ImapFlow(ReceiverInputs);
 
